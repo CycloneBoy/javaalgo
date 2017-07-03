@@ -28,3 +28,9 @@ hs_err_pid*
 src/main/resources/
 src/test/
 target/
+/src/main/java/com/cycloneboy/chapter24/TestMyLinkedList.java
+f1.dat
+f3.dat
+largedata.dat
+sortedfile.dat
+src/main/java/com/cycloneboy/chapter24/TestMyLinkedList.java

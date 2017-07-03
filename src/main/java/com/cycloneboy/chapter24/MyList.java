@@ -3,7 +3,7 @@ package com.cycloneboy.chapter24;
 /**
  * Created by CycloneBoy on 2017/7/3.
  */
-public interface MyList<E> extends java.lang.Iterable<E> {
+public interface MyList<E> extends java.lang.Iterable<E>{
 
     /**
      * Add a new element at the end of this list

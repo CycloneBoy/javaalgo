@@ -1,8 +1,5 @@
 package com.cycloneboy.chapter24;
 
-import jdk.nashorn.internal.runtime.Source;
-import jdk.nashorn.internal.runtime.linker.LinkerCallSite;
-import org.w3c.dom.ls.LSInput;
 
 /**
  * Created by CycloneBoy on 2017/7/3.
