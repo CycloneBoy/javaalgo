@@ -35,7 +35,7 @@ public class TestBST {
         ArrayList<BST.TreeNode<String>> path = tree.path("Peter");
 
         for (int i = 0; path != null && i < path.size(); i++) {
-            System.out.print(path.get(i).elemtent + " ");
+            System.out.print(path.get(i).element + " ");
         }
 
         Integer[] numbers = {2,4,3,1,8,5,6,7};
