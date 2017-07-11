@@ -1,5 +1,8 @@
 package com.cycloneboy.chapter27;
 
+import com.sun.org.apache.xerces.internal.impl.dv.dtd.ENTITYDatatypeValidator;
+
+import java.awt.peer.CanvasPeer;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
@@ -59,7 +62,13 @@ public class MyHashMap<K,V> implements MyMap<K,V>{
         removeEntries();
     }
 
-    private void removeEntries() {
+    // Remove all entries from ench bucket */
+    private void removeEntries(){
+        for (int i = 0; i < capacity; i++) {
+            if( table[i] != null){
+                table[i].clear();
+            }
+        }
     }
 
     public boolean containKey(K key) {
@@ -114,8 +123,13 @@ public class MyHashMap<K,V> implements MyMap<K,V>{
         return  null;
     }
 
-    private int hash(int i) {
-        return 0;
+    private int hash(int hashcode) {
+        return supplementalHash(hashcode) & (capacity -1);
+    }
+
+    private static int supplementalHash(int h) {
+        h^= (h >>> 20)^(h>>>12);
+        return  h ^(h>>>7)^(h>>>4);
     }
 
     public boolean isEmpty() {
@@ -141,21 +155,107 @@ public class MyHashMap<K,V> implements MyMap<K,V>{
         if(get(key) != null){ // The key is already in the map
             int bucketIndex = hash(key.hashCode());
             LinkedList<Entry<K,V>> bucket = table[bucketIndex];
-           //for(Entry<K,V>);
+            for(Entry<K,V> entry :bucket){
+                if(entry.getKey().equals(key)){
+                    V oldValue = entry.getValue();
+                    // Replace old value with new value
+                    entry.value = value;
+                    // Return the old value for the key
+                    return  oldValue;
+                }
+            }
         }
+
+        // Check load factor
+        if(size >= capacity * loadFctorThreshold){
+            if(capacity == MAXIMUM_CAPACITY){
+                throw new RuntimeException("Exceeding maximum capacity");
+            }
+            rehash();
+        }
+
+        int bucketIndex = hash(key.hashCode());
+
+        // Create a linked list for the bucket if not already created
+        if(table[bucketIndex] == null){
+            table[bucketIndex] = new LinkedList<Entry<K, V>>();
+        }
+
+        // Add a new entry (key,value) to hashTable[index]
+        table[bucketIndex].add(new MyMap.Entry<K,V>(key,value));
+        size++; // Increase size
 
         return  value;
     }
 
-    public void remove(K key) {
+    /** Rehash the map */
+    private void rehash() {
+        Set<Entry<K,V>> set = entrySet(); // Get entries
+        capacity <<= 1; // Same as capacity *=2 . <= 1 is more efficient
+        table = new LinkedList[capacity]; // Create a hash table
+        size = 0; // Reset size to 0;
 
+        for(Entry<K,V> entry : set){
+            put(entry.getKey(),entry.getValue()); // Store to new table
+        }
+    }
+
+    public void remove(K key) {
+        int bucketIndex = hash(key.hashCode());
+
+        // Remove the first entry that matches the key from a bucket
+        if(table[bucketIndex] != null){
+            LinkedList<Entry<K,V>> bucket = table[bucketIndex];
+            for(Entry<K,V> entry : bucket){
+                if(entry.getKey().equals(key)){
+                    bucket.remove(entry);
+                    size--; // Decrease size
+                    break; // Remove just one entry that match the key
+                }
+            }
+        }
     }
 
     public int size() {
-        return 0;
+        return size;
     }
 
     public Set<V> values() {
-        return null;
+       Set<V> set = new HashSet<V>();
+
+       for(int i=0;i< capacity ; i++){
+           if(table[i] != null){
+               LinkedList<Entry<K,V>> bucket = table[i];
+               for(Entry<K,V> entry : bucket){
+                   set.add(entry.getValue());
+               }
+           }
+       }
+       return  set;
+    }
+
+    /** Return a power of 2 for initialCapacity */
+    private int trimToPowerOf2(int initialCapacity){
+        int capacity = 1;
+        while (capacity < initialCapacity ){
+            capacity <<= 1 ; // Same as capacity *=2 . <= is more efficient
+        }
+
+        return capacity;
+    }
+
+    public String toString(){
+        StringBuilder builder = new StringBuilder("[");
+
+        for(int i = 0; i < capacity ; i ++){
+            if(table[i] != null && table[i].size() > 0){
+                for (Entry<K,V> entry : table[i]){
+                    builder.append(entry);
+                }
+            }
+        }
+
+        builder.append("]");
+        return builder.toString();
     }
 }
