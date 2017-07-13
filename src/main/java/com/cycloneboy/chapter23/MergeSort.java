@@ -30,7 +30,7 @@ public class MergeSort {
     }
 
     /** Merge two sorted lists */
-    private static void merge(int[] firstHalf, int[] secondHalf, int[] list) {
+    public static void merge(int[] firstHalf, int[] secondHalf, int[] list) {
         int current1 =0; // Current index in firstHalf
         int current2 =0; // Current index in secondHalf
         int current3 =0; // Current index in list
