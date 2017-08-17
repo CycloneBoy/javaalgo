@@ -3,7 +3,7 @@
 《Java语言程序设计(进阶篇)》 或《(Introduction to Java Programming (Comprehensive Version Tenth Edition）》
 
 书中的例子和我编写的例子
-
+说明：模块名：java-algo
 第23章 排序
 ---
 研究和分析各种排序算法的时间效率 
@@ -49,8 +49,9 @@
 5. 开放地址法是在发生冲突时，在散列表中找到一个开放位置的过程。开放地址法中有几种变体:线性探测、二次探测以及再哈希。
 6. 链地址法将具有同样散列索引的条目放到同一个位置中，而不是寻找新的位置。链地址法中每个位置称为一个桶。桶是容纳多个条目的容器。
 
-Java面试宝典
+Java程序员面试宝典
 ---
+说明：模块名：interview-java
 1. java基础
 2. 数据结构和算法
 3. 设计模式
@@ -58,8 +59,22 @@ Java面试宝典
 
 牛客网刷题
 ---
+说明：模块名：interview-java
 1. 剑指offer刷题：com.cycloneboy.interview.jzoffer
    1. 二维数组中的查找、
    2. 请实现一个函数，将一个字符串中的空格替换成“%20”
    3. 输入一个链表，从尾到头打印链表每个节点的值。
 
+设计模式之禅 
+---
+说明：模块名：design-pattern
+1. 第一部分：6大设计原则全新解读(SOLID ,稳定的)
+    1. 单一职责原则(Single Responsibility Principle)
+    2. 李氏替换原则(Liskov Substitution Principle)
+    3. 依赖倒置原则(Dependence Inversion Principle)
+    4. 接口隔离原则(Interface Segregation Principle)
+    5. 迪米特法则(Law of Demeter)
+    6. 开闭原则(Open Closed Principle)
+   
+2. 第二部分：23种设计模式完美演绎
+    
