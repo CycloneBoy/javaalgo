@@ -4,6 +4,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
+ * 同步屏障
  * Created by CycloneBoy on 2017/9/7.
  */
 public class CyclicBarrierDemo {

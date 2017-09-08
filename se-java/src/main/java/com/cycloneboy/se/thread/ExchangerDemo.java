@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.Exchanger;
 
 /**
+ * 交换器
  * Created by CycloneBoy on 2017/9/7.
  */
 public class ExchangerDemo {

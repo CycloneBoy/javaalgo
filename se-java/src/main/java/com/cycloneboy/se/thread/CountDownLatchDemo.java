@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * 倒计时门栓
  * Created by CycloneBoy on 2017/9/7.
  */
 public class CountDownLatchDemo {
