@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="interview-java:main" external.linked.project.path="$MODULE_DIR$/../../interview-java" external.root.project.path="$MODULE_DIR$/../../interview-java" external.system.id="GRADLE" external.system.module.group="com.cycloneboy.cycloneboy.interview" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../interview-java/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../interview-java/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../interview-java/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../interview-java/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

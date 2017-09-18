@@ -10,7 +10,15 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="design-pattern_main" target="1.8" />
+      <module name="design-pattern_test" target="1.8" />
+      <module name="interview-java_main" target="1.8" />
+      <module name="interview-java_test" target="1.8" />
+      <module name="java-algo_main" target="1.8" />
+      <module name="java-algo_test" target="1.8" />
       <module name="javaalgo" target="1.8" />
+      <module name="se-java_main" target="1.8" />
+      <module name="se-java_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
