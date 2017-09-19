@@ -1,7 +1,7 @@
 package com.cycloneboy.se.io;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import com.sun.org.apache.xpath.internal.operations.String;
+
 import java.io.IOException;
 
 /**
@@ -11,14 +11,9 @@ public class WriterAppend {
 
     public static void main(String[] args) throws IOException{
 
-        BufferedWriter bw = null;
-        String s = "hello";
-
-        bw = new BufferedWriter(new FileWriter("D:\\temp.txt"));
-        bw.write(s);
-        bw.newLine();
-        bw.append(s + " world");
-        bw.close();
-
+        System.out.println((9999&9998));
+        System.out.println((9997&9998));
+        System.out.printf("%s,%5.3s\n","computer","computer");
+        //Object o = new String("hello");
     }
 }
