@@ -42,10 +42,21 @@ public class ImageFile implements Runnable{
         }
     }
 
+    //创建文件夹
+    public static void createDir(String filePath){
+        dir = filePath;
+        File file = new File(dir);
+        if(file.exists()){
+            System.out.println("dir is exists");
+        }else {
+            file.mkdir();
+        }
+    }
+
     @Override
     public void run() {
         for(int i = begin;i< last;i++){
-            System.out.println(" 爬取的链接：" + imageUrls.get(i));
+           // System.out.println(" 爬取的链接：" + imageUrls.get(i));
 
             try{
                 URL url = new URL(imageUrls.get(i));
@@ -59,7 +70,7 @@ public class ImageFile implements Runnable{
                 continue;
             }
 
-            System.out.println("正确爬取链接:"+ imageUrls.get(i));
+            //System.out.println("正确爬取链接:"+ imageUrls.get(i));
 
             String filename = dir +'/' + imageUrls.get(i).substring(
                     imageUrls.get(i).lastIndexOf('/') +1);
@@ -69,7 +80,7 @@ public class ImageFile implements Runnable{
                     file1.createNewFile();
 
                     outputStream = new FileOutputStream(new File(filename));
-                    byte[] buf = new byte[10240];
+                    byte[] buf = new byte[1024];
                     int length = 0;
                     while((length = inputStream.read(buf,0,buf.length)) != -1){
                         outputStream.write(buf,0,length);
