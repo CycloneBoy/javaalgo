@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-algo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/java-algo_main.iml" group="java-algo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-algo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/java-algo_test.iml" group="java-algo" />
       <module fileurl="file://$PROJECT_DIR$/javaalgo.iml" filepath="$PROJECT_DIR$/javaalgo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/se-java.iml" filepath="$PROJECT_DIR$/.idea/modules/se-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/se-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/se-java_main.iml" group="se-java" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/se-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/se-java_test.iml" group="se-java" />
     </modules>
