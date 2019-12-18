@@ -105,6 +105,7 @@
     <module>se-java</module>
     <module>design-pattern</module>
     <module>algo</module>
+    <module>data-structures</module>
   </modules>
 
   <name>algo</name>
