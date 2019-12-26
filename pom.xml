@@ -106,6 +106,8 @@
     <module>design-pattern</module>
     <module>algo</module>
     <module>data-structures</module>
+    <module>Concurrency</module>
+    <module>HighConcurrency</module>
   </modules>
 
   <name>algo</name>

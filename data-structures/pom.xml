@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>data-structures</artifactId>
+  <dependencies>
+
+  </dependencies>
+
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <parent>
+    <artifactId>algo</artifactId>
+    <groupId>com.cycloneboy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <build>
+
+  <plugins>
+    <!-- 资源文件拷贝插件 -->
+    <plugin>
+      <artifactId>maven-resources-plugin</artifactId>
+      <configuration>
+        <encoding>UTF-8</encoding>
+      </configuration>
+      <groupId>org.apache.maven.plugins</groupId>
+    </plugin>
+    <plugin>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+        <encoding>${project.build.sourceEncoding}</encoding>
+        <source>${maven.compiler.source}</source>
+        <target>${maven.compiler.target}</target>
+      </configuration>
+      <version>3.8.0</version>
+    </plugin>
+  </plugins>
+  </build>
+
+</project>
