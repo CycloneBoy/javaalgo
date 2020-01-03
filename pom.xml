@@ -103,11 +103,15 @@
     <module>java-algo</module>
     <module>interview-java</module>
     <module>se-java</module>
+    <!-- 《设计模式之禅》  -->
     <module>design-pattern</module>
     <module>algo</module>
+    <!-- 《数据结构与算法Java语言描述（第三版）》  -->
     <module>data-structures</module>
     <module>Concurrency</module>
     <module>HighConcurrency</module>
+    <!-- 慕课网: 玩儿转数据结构 - 课程官方代码仓-->
+    <module>algo-mooc</module>
   </modules>
 
   <name>algo</name>
