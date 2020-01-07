@@ -1,88 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>concurrency</artifactId>
 
-	<parent>
-		<artifactId>algo</artifactId>
-		<groupId>com.cycloneboy</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.springframework.boot</groupId>
+      </plugin>
+    </plugins>
+  </build>
 
-	<artifactId>concurrency</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
 
-	<name>concurrency</name>
-	<description>Demo project for Spring Boot</description>
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+    </dependency>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+    </dependency>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+    <dependency>
+      <artifactId>guava</artifactId>
+      <groupId>com.google.guava</groupId>
+      <version>27.1-jre</version>
+    </dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+    <dependency>
+      <artifactId>joda-time</artifactId>
+      <groupId>joda-time</groupId>
+      <version>2.10.5</version>
+    </dependency>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
+    <dependency>
+      <artifactId>jedis</artifactId>
+      <groupId>redis.clients</groupId>
+      <version>2.9.3</version>
+    </dependency>
 
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>27.1-jre</version>
-        </dependency>
 
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>2.10.5</version>
-        </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
 
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>2.9.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-hystrix-dashboard</artifactId>
-			<version>2.1.2.RELEASE</version>
-			<scope>compile</scope>
-		</dependency>
+    <dependency>
+      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+      <groupId>org.springframework.cloud</groupId>
+    </dependency>
 
-	</dependencies>
+    <dependency>
+      <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+      <groupId>org.springframework.cloud</groupId>
+    </dependency>
 
-	<dependencyManagement>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-dependencies</artifactId>
-			<version>1.5.10.RELEASE</version>
-		</dependency>
-	</dependencies>
-	</dependencyManagement>
+  </dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <groupId>org.springframework.cloud</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${spring-cloud.version}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.1.7.RELEASE</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <description>Demo project for Spring Boot</description>
+
+  <modelVersion>4.0.0</modelVersion>
+  <name>concurrency</name>
+
+  <packaging>war</packaging>
+
+  <parent>
+    <artifactId>algo</artifactId>
+    <groupId>com.cycloneboy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
+    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+  </properties>
+
+  <version>0.0.1-SNAPSHOT</version>
 
 
 </project>
