@@ -12,6 +12,7 @@ import org.junit.Test;
 public class SortDemo {
 
   public static void main(String[] args) {
+    log.info("test");
     ArrayList<Integer> arrayList = new ArrayList<Integer>();
     arrayList.add(-1);
     arrayList.add(3);
