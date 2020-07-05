@@ -2,9 +2,9 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
   <artifactId>algo</artifactId>
-
-
   <build>
     <!--        <finalName>${project.name}</finalName>-->
     <pluginManagement>
@@ -44,6 +44,16 @@
         </configuration>
         <version>3.8.0</version>
       </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skipTests>${skipTests}</skipTests>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.0.0-M5</version>
+      </plugin>
+
     </plugins>
 
     <resources>
@@ -95,24 +105,28 @@
     </dependencies>
   </dependencyManagement>
   <description>Demo project for Spring Boot</description>
+
   <groupId>com.cycloneboy</groupId>
 
   <modelVersion>4.0.0</modelVersion>
 
   <modules>
     <module>java-algo</module>
+    <!-- 面试准备-->
     <module>interview-java</module>
+    <!-- java 基础-->
     <module>se-java</module>
     <!-- 《设计模式之禅》  -->
     <module>design-pattern</module>
-    <module>algo</module>
+    <!--    <module>algo</module>-->
     <!-- 《数据结构与算法Java语言描述（第三版）》  -->
     <module>data-structures</module>
+    <!--    Java 并发-->
     <module>Concurrency</module>
     <!-- 慕课网: 玩儿转数据结构 - 课程官方代码仓-->
     <module>algo-mooc</module>
+    <!--    <module>algo-other</module>-->
   </modules>
-
   <name>algo</name>
 
   <packaging>pom</packaging>
@@ -133,8 +147,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <skipTests>true</skipTests>
     <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
     <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     <spring-platform.version>Cairo-SR8</spring-platform.version>

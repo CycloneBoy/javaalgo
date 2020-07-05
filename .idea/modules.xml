@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/algo-mooc/algo-mooc.iml" filepath="$PROJECT_DIR$/algo-mooc/algo-mooc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algo/algo-other.iml" filepath="$PROJECT_DIR$/algo/algo-other.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency/concurrency (1).iml" filepath="$PROJECT_DIR$/Concurrency/concurrency (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-structures/data-structures.iml" filepath="$PROJECT_DIR$/data-structures/data-structures.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/design-pattern.iml" filepath="$PROJECT_DIR$/.idea/modules/design-pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/design-pattern_main.iml" filepath="$PROJECT_DIR$/.idea/modules/design-pattern_main.iml" group="design-pattern" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/design-pattern_test.iml" filepath="$PROJECT_DIR$/.idea/modules/design-pattern_test.iml" group="design-pattern" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview-java.iml" filepath="$PROJECT_DIR$/.idea/modules/interview-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/interview-java_main.iml" group="interview-java" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/interview-java_test.iml" group="interview-java" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-algo.iml" filepath="$PROJECT_DIR$/.idea/modules/java-algo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-algo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/java-algo_main.iml" group="java-algo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-algo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/java-algo_test.iml" group="java-algo" />
       <module fileurl="file://$PROJECT_DIR$/javaalgo.iml" filepath="$PROJECT_DIR$/javaalgo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/se-java.iml" filepath="$PROJECT_DIR$/.idea/modules/se-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/se-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/se-java_main.iml" group="se-java" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/se-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/se-java_test.iml" group="se-java" />
     </modules>
   </component>
 </project>

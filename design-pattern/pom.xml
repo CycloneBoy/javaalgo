@@ -5,16 +5,6 @@
   <artifactId>design-pattern</artifactId>
 
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <groupId>org.springframework.boot</groupId>
-
-      </plugin>
-    </plugins>
-  </build>
-
   <dependencies>
     <dependency>
       <artifactId>spring-boot-starter</artifactId>

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Concurrency/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algo-mooc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algo-mooc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-structures/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-structures/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/design-pattern" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/design-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interview-java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interview-java/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interview-java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-algo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-algo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/se-java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/se-java/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

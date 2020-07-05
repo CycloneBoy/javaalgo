@@ -2,23 +2,53 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javaalgo" />
+        <module name="design-pattern" />
+        <module name="algo-mooc" />
+        <module name="interview-java" />
+        <module name="java-algo" />
+        <module name="se-java" />
+        <module name="concurrency (1)" />
+        <module name="algo-other" />
+        <module name="data-structures" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="algo-mooc" target="1.8" />
+      <module name="algo-other" target="1.8" />
+      <module name="concurrency (1)" target="1.8" />
+      <module name="concurrency (2)" target="1.8" />
+      <module name="data-structures" target="1.8" />
+      <module name="design-pattern" target="1.8" />
       <module name="design-pattern_main" target="1.8" />
       <module name="design-pattern_test" target="1.8" />
+      <module name="interview-java" target="1.8" />
       <module name="interview-java_main" target="1.8" />
       <module name="interview-java_test" target="1.8" />
+      <module name="java-algo" target="1.8" />
       <module name="java-algo_main" target="1.8" />
       <module name="java-algo_test" target="1.8" />
       <module name="javaalgo" target="1.8" />
+      <module name="se-java" target="1.8" />
       <module name="se-java_main" target="1.8" />
       <module name="se-java_test" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="algo-mooc" options="-parameters" />
+      <module name="algo-other" options="-parameters" />
+      <module name="concurrency (1)" options="-parameters" />
+      <module name="concurrency (2)" options="-parameters" />
+      <module name="data-structures" options="-parameters" />
+      <module name="design-pattern" options="-parameters" />
+      <module name="interview-java" options="-parameters" />
+      <module name="java-algo" options="-parameters" />
+      <module name="se-java" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="interview-java" external.linked.project.path="$MODULE_DIR$/../../interview-java" external.root.project.path="$MODULE_DIR$/../../interview-java" external.system.id="GRADLE" external.system.module.group="com.cycloneboy.cycloneboy.interview" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../interview-java/target/classes" />
+    <output-test url="file://$MODULE_DIR$/../../interview-java/target/test-classes" />
     <content url="file://$MODULE_DIR$/../../interview-java">
+      <sourceFolder url="file://$MODULE_DIR$/../../interview-java/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../interview-java/src/main/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../interview-java/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../interview-java/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../interview-java/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
 </module>

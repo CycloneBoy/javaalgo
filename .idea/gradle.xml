@@ -1,58 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/design-pattern" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../JavaCommonUtils/gradle-4.0-bin/gradle-4.0" />
-        <option name="gradleJvm" value="Jdk1.8" />
+        <option name="gradleHome" value="$USER_HOME$/app/gradle" />
+        <option name="gradleJvm" value="1.8_221_oracle" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/design-pattern" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="createEmptyContentRootDirectories" value="true" />
-        <option name="distributionType" value="LOCAL" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/interview-java" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../JavaCommonUtils/gradle-4.0-bin/gradle-4.0" />
-        <option name="gradleJvm" value="Jdk1.8" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/interview-java" />
-          </set>
-        </option>
-        <option name="useAutoImport" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="createEmptyContentRootDirectories" value="true" />
-        <option name="distributionType" value="LOCAL" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java-algo" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../JavaCommonUtils/gradle-4.0-bin/gradle-4.0" />
-        <option name="gradleJvm" value="Jdk1.8" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/java-algo" />
-          </set>
-        </option>
-        <option name="useAutoImport" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/se-java" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../JavaCommonUtils/gradle-4.0-bin/gradle-4.0" />
-        <option name="gradleJvm" value="Jdk1.8" />
+        <option name="gradleJvm" value="1.8_221_oracle" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/se-java" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

@@ -5,16 +5,6 @@
   <artifactId>se-java</artifactId>
 
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <groupId>org.springframework.boot</groupId>
-
-      </plugin>
-    </plugins>
-  </build>
-
   <dependencies>
     <dependency>
       <artifactId>spring-boot-starter</artifactId>
@@ -38,6 +28,41 @@
       <version>4.12</version>
     </dependency>
 
+    <dependency>
+      <artifactId>fastjson</artifactId>
+      <groupId>com.alibaba</groupId>
+      <version>1.2.58</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>jedis</artifactId>
+      <groupId>redis.clients</groupId>
+      <version>3.1.0</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>jsoup</artifactId>
+      <groupId>org.jsoup</groupId>
+      <version>1.11.2</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>httpcore</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+      <version>4.4.13</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>httpclient</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+      <version>4.5.12</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>quartz</artifactId>
+      <groupId>org.opensymphony.quartz</groupId>
+      <version>1.6.1</version>
+    </dependency>
   </dependencies>
   <description>Demo project for Spring Boot</description>
 

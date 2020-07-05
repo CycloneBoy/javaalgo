@@ -38,10 +38,19 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Concurrency" />
+    <file type="web" url="file://$PROJECT_DIR$/design-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/HighConcurrency" />
+    <file type="web" url="file://$PROJECT_DIR$/se-java" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/algo/pom.xml" />
+        <option value="$PROJECT_DIR$/data-structures/pom.xml" />
+        <option value="$PROJECT_DIR$/algo-mooc/pom.xml" />
       </list>
     </option>
   </component>
@@ -100,7 +109,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="Jdk1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8_221_oracle" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
