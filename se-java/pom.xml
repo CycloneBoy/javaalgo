@@ -43,7 +43,7 @@
     <dependency>
       <artifactId>jsoup</artifactId>
       <groupId>org.jsoup</groupId>
-      <version>1.11.2</version>
+      <version>1.14.2</version>
     </dependency>
 
     <dependency>
