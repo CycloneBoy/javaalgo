@@ -125,6 +125,7 @@
     <module>Concurrency</module>
     <!-- 慕课网: 玩儿转数据结构 - 课程官方代码仓-->
     <module>algo-mooc</module>
+    <module>leetcode</module>
     <!--    <module>algo-other</module>-->
   </modules>
   <name>algo</name>
